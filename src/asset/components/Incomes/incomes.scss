@@ -1,0 +1,52 @@
+@import 'Modal/index.scss';
+
+.incomes {
+  &__table, th, td {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  &__table-wrapper {
+    margin-top: 40px;
+    display: inline-block;
+    overflow: auto;
+    
+    @include responsive(xs) {
+      width: 100%;;
+    }
+  }
+  
+  &__table {  
+    .table {
+      &__head {
+        background-color: $color-grey_light;
+        
+        & th {
+          &::first-letter {
+            text-transform: capitalize;
+          }
+          
+          font-weight: bold;
+        }
+      }
+      
+      &__info {
+        &-inner {
+          @include flex();
+          justify-content: space-between;
+        }        
+      }
+      
+      &__data {
+        &.account {
+          &::first-letter {
+            text-transform: capitalize;
+          }
+          
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

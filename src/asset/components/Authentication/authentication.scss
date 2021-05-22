@@ -1,0 +1,28 @@
+.authentication {
+  @include flex();
+  justify-content: flex-end;
+  padding: 20px 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+  
+  @include responsive(xs) {
+		flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  &__user-name {
+    flex-grow: 1;
+  }
+  
+  & h4 {
+    font-size: 0.9rem;
+  }
+  
+  & > button.button-light {
+    border-width: 1px;
+    margin-left: 20px;
+    margin: 5px;
+    font-weight: normal;
+    font-size: 0.8rem;    
+  }
+}

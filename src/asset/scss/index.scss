@@ -1,0 +1,13 @@
+@import './_variables.scss';
+@import './_mixines.scss';
+@import './_style.scss';
+@import '../components/_commonComponents';
+
+@import '_app.scss';
+@import '../components/Authentication/authentication.scss';
+@import '../components/Accounts/accounts.scss';
+@import '../components/Enter/enter.scss';
+@import '../components/Nav/nav.scss';
+@import '../components/Costs/costs.scss';
+@import '../components/Graph/graph.scss';
+@import '../components/Incomes/incomes.scss';

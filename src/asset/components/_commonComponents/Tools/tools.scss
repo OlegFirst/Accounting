@@ -1,0 +1,24 @@
+.tools-type-2 {
+  @include flex();
+  font-weight: initial;
+  color: $color-blue;
+  
+  &__edit,
+  &__remove {
+    @include flex();
+    border: 1px solid $color-blue;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+		transition: 0.4s;
+    cursor: pointer;
+		
+		&:hover {
+			background-color: $color-blue_light;
+		}
+  }
+  
+  &__remove {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.month-changer {
+  @include flex();
+  
+  &__text {
+    color: $color-blue;
+    padding: 0 10px;
+  }
+ 
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 27px solid $color-blue;
+    cursor: pointer;
+    
+    &-left {
+      transform: rotate(-90deg);
+    }
+    
+    &-right {
+      transform: rotate(90deg);
+    }
+  }
+}

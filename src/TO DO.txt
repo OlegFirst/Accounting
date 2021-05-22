@@ -1,0 +1,15 @@
+- DB "magisterska"
+
+- ERRORS
+2. Server error massages show during nav is changed
+3. Avoid removing account from 'accounts' if this account is being used
+4. If I remove costs remove it from accounts
+5. Enter -> field length error
+
+- Check
+1. Accounts -> Remove item if it is present in the COSTS
+2. Graph -> INCOMES < COSTS
+3. Check in ukrainian
+
+TO DO:
+1. Make less then 10 cabinates

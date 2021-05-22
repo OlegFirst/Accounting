@@ -1,0 +1,16 @@
+.tools {
+  @include flex();
+  font-weight: initial;
+  color: $color-blue;
+  
+  &__plus,
+  &__remove {
+    cursor: pointer;
+  }
+  
+  &__remove {
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+  }
+}

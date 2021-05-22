@@ -1,0 +1,28 @@
+@mixin flex($properties: false) {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin responsive ($type) {
+  @if $type == 'xs' {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $type == 'sm' {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  } @else if $type == 'md' {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $type == 'lg' {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @error "Wrong type `#{$type}` in responsive mixin";
+  }
+}

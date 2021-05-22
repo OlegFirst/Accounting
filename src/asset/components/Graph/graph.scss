@@ -1,0 +1,56 @@
+.graph {
+  .canvas-wrapper {
+    margin-top: 40px;
+    overflow: auto;
+    
+    @include responsive (xs) {
+      width: 100%;
+    }
+  }
+  
+  .canvas {
+    height: 300px;
+  }
+  
+  .canvas-caption {
+    margin-top: 20px;
+    
+   span::first-letter {
+    text-transform: capitalize;
+   }
+    
+    &__color {
+      @include flex();
+      justify-content: flex-start;
+    
+      .color {
+        &__block {          
+          width: 20px;
+          height: 20px;
+          margin: 0;
+          
+          &_red {
+            background-color: red;
+          }
+          
+          &_blue {
+            background-color: blue;
+          }
+        }
+      
+        &__text {
+          margin: 0;
+          margin-left: 20px;
+        }
+      }
+    }
+    
+    & span {
+      margin-right: 20px;
+      
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

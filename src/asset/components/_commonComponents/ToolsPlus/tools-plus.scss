@@ -1,0 +1,19 @@
+.tools-plus {
+  @include flex();
+  color: $color-blue;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $color-grey;
+  }
+  
+  &__plus {
+    border: 1px solid $color-blue;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;    
+  }
+}
